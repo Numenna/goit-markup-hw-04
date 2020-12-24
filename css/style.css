@@ -24,6 +24,7 @@ html {
   --background-button-tab: #f5f4fa;
   --background-dark: #2f303a;
   --border-light-color: #eeeeee;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -131,8 +132,8 @@ li {
 .icon-smartphone {
   margin-right: 10px;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
 }
 
 h2,
@@ -303,7 +304,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  height: 368px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -311,13 +311,14 @@ h3 {
 
 .team-members-card {
   width: 270px;
-  height: 368px;
+  height: 428px;
   border: transparent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .team-member {
@@ -333,6 +334,93 @@ h3 {
   line-height: 1.9;
 }
 
+.social-accounts {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-bottom: 30px;
+  width: 206px;
+  height: 44px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0px;
+}
+
+.social-accounts .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-color);
+}
+
+.social-accounts .links:hover,
+.social-accounts .links:focus {
+  background-color: var(--active-color);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.links .icon {
+  display: block;
+  flex-direction: row;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Постоянные клиенты */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-links .link {
+  display: flex;
+  height: 90px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+
+.clients-links .link:hover,
+.clients-links .link:focus {
+  color: var(--active-color);
+}
+
+.clients-icon {
+  display: block;
+  fill: currentColor;
+}
+
+/* Footer */
 .footer {
   background-color: var(--background-dark);
   min-width: 1600px;
@@ -342,6 +430,11 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+}
+
+.contacts {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .accent {
@@ -382,6 +475,69 @@ h3 {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+}
+
+.join-in-contacts {
+  display: inline-flex;
+  margin-top: 78px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.join-in-title h3 {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  height: 16px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+}
+.social-media .item {
+  display: block;
+  flex-direction: row;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.social-media .item:last-child {
+  margin-right: 0px;
+}
+
+.social-media .item:nth-child(1) {
+  background-image: url(../images/instagram-1.svg);
+}
+
+.social-media .item:nth-child(2) {
+  background-image: url(../images/twitter-1.svg);
+}
+
+.social-media .item:nth-child(3) {
+  background-image: url(../images/facebook-1.svg);
+}
+
+.social-media .item:nth-child(4) {
+  background-image: url(../images/linkedin-1.svg);
+}
+
+.social-media .item:hover {
+  background-color: var(--accent-color);
 }
 
 /* portfolio style */
@@ -464,11 +620,6 @@ h3 {
   font-size: 18px;
   line-height: 2;
   margin-top: 20px;
-}
-
-.products h2,
-p {
-  padding-left: 24px;
 }
 
 .section-portfolio {
