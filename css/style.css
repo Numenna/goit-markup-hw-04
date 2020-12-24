@@ -57,6 +57,7 @@ li {
   height: 31px;
   margin-top: 25px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -424,12 +425,17 @@ h3 {
 .footer {
   background-color: var(--background-dark);
   min-width: 1600px;
-  display: block;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+}
+
+.align {
+  display: flex;
+  align-items: baseline;
 }
 
 .contacts {
@@ -474,13 +480,11 @@ h3 {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
 }
 
 .join-in-contacts {
   display: inline-flex;
-  margin-top: 78px;
-  margin-left: 70px;
+  margin-top: 12px;
   width: 206px;
   height: 80px;
 }
@@ -514,6 +518,7 @@ h3 {
   margin-right: 10px;
   margin-left: 0px;
   padding-left: 0px;
+  cursor: pointer;
 }
 
 .social-media .item:last-child {
@@ -537,10 +542,15 @@ h3 {
 }
 
 .social-media .item:hover {
-  background-color: var(--accent-color);
+  background-color: var(--active-color);
 }
 
 /* portfolio style */
+
+.portfolio {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
 
 .buttons-list {
   display: flex;
@@ -556,8 +566,9 @@ h3 {
 
 .nav-products .but-item {
   margin-bottom: 50px;
-  margin-left: 30px;
-  width: 128px;
+  margin-left: 8px;
+  padding: 6px 22px;
+  font-family: inherit;
   height: 38px;
   left: 576px;
   top: 174px;
@@ -569,7 +580,8 @@ h3 {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .buttons-list .but-item:hover,
@@ -591,8 +603,14 @@ h3 {
   background: var(--color-white);
   border: 1px solid var(--border-light-color);
   box-sizing: border-box;
+}
+
+.products .products-cards:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-left: 1px solid var(--border-light-color);
+  border-right: 1px solid var(--border-light-color);
+  border-bottom: 1px solid var(--border-light-color);
 }
 
 .products .products-cards:nth-child(3n) {
@@ -611,7 +629,7 @@ h3 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   margin-top: 4px;
 }
 
@@ -619,14 +637,8 @@ h3 {
   font-weight: 700px;
   font-size: 18px;
   line-height: 2;
-  margin-top: 20px;
 }
 
-.section-portfolio {
-  margin-bottom: 94px;
-  margin-top: 94px;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 200px;
+.products .text {
+  padding: 20px 24px;
 }
